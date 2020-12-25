@@ -11,24 +11,24 @@ Feature: Epam
       Then choose 'CAREERS'
       Then choose 'Join our Team'
       Then set parameters (Location, Skills)
-      Then list of offers
+      Then list of offers with parameters location and skills
     
     Scenario: Learn about company
       Given main page of Emap's site
       When click on menu button
       Then choose 'about'
-      Then informatain about history, partners etc
+      Then information about history, partners etc (https://www.epam.com/about)
     
     Scenario: Contact to company
       Given main page of Emap's site
       When click on letter image
-      Then open form for sending
+      Then open form for sending (https://www.epam.com/about/who-we-are/contact)
     
     Scenario: Change language of site
       Given main page of Emap's site
       Then click on language on top of page
-      Then choose your language
-      Then all information on site is in tour language
+      Then choose language
+      Then site in the selected language
     
     Scenario: Return to main page
       Given any page of site (Epam)
